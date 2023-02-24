@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# React WordPress Post Cards
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React app that fetches posts from a WordPress site and displays them as cards. Each card displays the post title, featured image (if available), excerpt, and a "read more" link that takes the user to the full post on the WordPress site.
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+To run this app locally, follow these steps:
 
-### `npm start`
+Clone this repository to your local machine:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+`git clone https://github.com/your-username/react-wordpress-posts-cards.git`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Install the app dependencies:
 
-### `npm test`
+`cd react-wordpress-posts-cards`
+`npm install`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Start the app:
 
-### `npm run build`
+`npm start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Open your web browser and go to http://localhost:3000 to view the app.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To use this app with your own WordPress site, you will need to update the src/components/GetCards.js file with the URL of your WordPress site. You can also customize the app by changing the card layout, color scheme, or other components.
 
-### `npm run eject`
+## Dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This app uses the following dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+React: a JavaScript library for building user interfaces
+axios: a JavaScript library for making HTTP requests
+Chakra UI: a set of accessible and reusable UI components for React
+html-to-text: a JavaScript library for converting HTML to plain text
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## License
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This app is licensed under the MIT license. You are free to use, modify, and distribute this code as long as you include the original copyright and license notice.
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you find a bug or want to suggest a new feature, please open an issue on this repository. Pull requests are also welcome if you want to contribute code changes or improvements.
