@@ -8,7 +8,7 @@ To run this app locally, follow these steps:
 
 Clone this repository to your local machine:
 
-`git clone https://github.com/your-username/react-wordpress-posts-cards.git`
+`git clone https://github.com/carvalhochris/WPCards.git`
 
 ## Install the app dependencies:
 
