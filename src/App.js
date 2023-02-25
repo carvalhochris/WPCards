@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Button onClick={toggleColorMode} mt={7} size={10} mb={7}>
+        <Button onClick={toggleColorMode} mt={0} size={10} mb={7}>
           {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
         </Button>
         <GetCards />

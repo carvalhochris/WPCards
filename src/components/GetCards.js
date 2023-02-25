@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import MyCards from "./MyCards";
+import { Spinner } from "@chakra-ui/react";
 
 function GetCards() {
   const [data, setData] = useState([]);
@@ -15,21 +16,29 @@ function GetCards() {
 
   return (
     <div>
-      {data.map((item) => (
-        <div key={item.id}>
-          {/* <h2>{item.title}</h2>
-          <p>{item.body}</p> */}
-          <MyCards
-            title={item.title.rendered}
-            content={item.content.rendered}
-            slug={item.slug}
-            img={
-              item.yoast_head_json.og_image &&
-              item.yoast_head_json.og_image[0].url
-            }
-          />
-        </div>
-      ))}
+      {data.length === 0 ? (
+        <Spinner
+        thickness='2px'
+        speed='0.65s'
+        emptyColor='gray.200'
+        color='blue.500'
+        size='xl'
+      />
+      ) : (
+        data.map((item) => (
+          <div key={item.id}>
+            <MyCards
+              title={item.title.rendered}
+              content={item.content.rendered}
+              slug={item.slug}
+              img={
+                item.yoast_head_json.og_image &&
+                item.yoast_head_json.og_image[0].url
+              }
+            />
+          </div>
+        ))
+      )}
     </div>
   );
 }
