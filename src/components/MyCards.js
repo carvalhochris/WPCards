@@ -23,9 +23,9 @@ function MyCards(props) {
   // console.log(props.img);
 
   return (
-    <Container mb={5}>
+    <Container mb={10}>
       <Center>
-        <Card maxW="sm">
+        <Card maxW="xl">
           <CardBody>
             <Image
               src={props.img}
@@ -37,7 +37,7 @@ function MyCards(props) {
               <p dangerouslySetInnerHTML={{ __html: truncatedContent }}></p>
             </Stack>
           </CardBody>
-          <Divider />
+          <Divider variant="dashed" />
           <Center>
             <CardFooter>
               <Link href={link} isExternal>
