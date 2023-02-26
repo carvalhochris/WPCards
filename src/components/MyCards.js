@@ -1,6 +1,5 @@
 import { Card, Center, CardBody, Container } from "@chakra-ui/react";
 import { Link, Stack, Heading, Image } from "@chakra-ui/react";
-// import { htmlToText } from "html-to-text";
 import { Divider, Button, CardFooter } from "@chakra-ui/react";
 
 function MyCards(props) {
