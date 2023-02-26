@@ -1,6 +1,6 @@
 # React WordPress Post Cards
 
-This is a simple React app that fetches posts from a WordPress site and displays them as cards. \
+This is a simple React app that fetches posts from a WordPress site and displays them as cards.
 
 Each card displays the post title, featured image (if available), excerpt, and a "read more" link that takes the user to the full post on the WordPress site.
 
